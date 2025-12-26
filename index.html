@@ -1,58 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>ALESS STORE</title>
 
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       font-family: Arial, sans-serif;
-      background: #f4f4f4;
     }
 
+    body {
+      background: #f5f5f5;
+    }
+
+    /* HERO SECTION */
     .hero {
+      width: 100%;
       height: 70vh;
-      background: url("IMG_2848.jpeg") center/cover no-repeat;
+      background-image: url("IMG_2848.jpeg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-overlay {
+      background: rgba(0, 0, 0, 0.45);
+      width: 100%;
+      height: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
-      color: white;
+      color: #fff;
+      padding: 20px;
     }
 
-    .hero-overlay {
-      background: rgba(0,0,0,0.45);
-      padding: 40px;
-      width: 100%;
-    }
-
-    .hero h1 {
+    .hero-content h1 {
       font-size: 36px;
       margin-bottom: 10px;
       letter-spacing: 2px;
     }
 
-    .hero p {
-      font-size: 16px;
+    .hero-content p {
+      font-size: 18px;
       margin-bottom: 20px;
     }
 
-    .hero a {
-      background: #cfa36a;
-      color: #000;
-      padding: 12px 22px;
+    .hero-buttons a {
       text-decoration: none;
-      font-weight: bold;
-      border-radius: 4px;
+      background: #d2a679;
+      color: #000;
+      padding: 12px 20px;
       margin: 0 8px;
+      border-radius: 6px;
+      font-weight: bold;
       display: inline-block;
     }
 
+    /* CONTENT */
     .container {
-      padding: 25px;
-      max-width: 1000px;
+      padding: 30px;
+      max-width: 900px;
       margin: auto;
     }
 
@@ -62,35 +75,64 @@
       border-radius: 8px;
     }
 
+    .product h2 {
+      margin-bottom: 10px;
+    }
+
+    .product p {
+      margin-bottom: 15px;
+    }
+
+    .buy {
+      display: inline-block;
+      background: #ff9900;
+      color: #000;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* FOOTER */
     footer {
       text-align: center;
-      padding: 15px;
+      padding: 20px;
       background: #eee;
-      margin-top: 40px;
+      margin-top: 30px;
+      font-size: 14px;
     }
   </style>
 </head>
 
 <body>
 
+  <!-- HERO -->
   <section class="hero">
     <div class="hero-overlay">
-      <h1>ALESS STORE</h1>
-      <p>Elegant jewelry & trending products</p>
-      <a href="#">Shop Now</a>
-      <a href="#">Contact Us</a>
+      <div class="hero-content">
+        <h1>ALESS STORE</h1>
+        <p>Elegant jewelry & trending products</p>
+
+        <div class="hero-buttons">
+          <a href="#shop">Shop Now</a>
+          <a href="#contact">Contact Us</a>
+        </div>
+      </div>
     </div>
   </section>
 
-  <div class="container">
+  <!-- CONTENT -->
+  <div class="container" id="shop">
     <div class="product">
       <h2>Example Product</h2>
       <p>This is a sample product.</p>
+      <a class="buy" href="#">Buy Now</a>
     </div>
   </div>
 
+  <!-- FOOTER -->
   <footer>
-    <p>© 2025 ALESS STORE</p>
+    © 2025 ALESS STORE
   </footer>
 
 </body>
