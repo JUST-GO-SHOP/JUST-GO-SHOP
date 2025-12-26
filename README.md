@@ -1,7 +1,7 @@
 ## Hi there 👋
 
 <!--
-**JUST-GO-SHOP/JUST-GO-SHOP** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**ALESS STORE** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
 
